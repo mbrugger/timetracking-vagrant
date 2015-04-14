@@ -1,0 +1,4 @@
+[submodule "timetracking-docker"]
+	path = timetracking-docker
+	url = git@github.com:mbrugger/timetracking-docker.git
+	branch = develop

@@ -68,10 +68,12 @@ Vagrant.configure(2) do |config|
   # documentation for more information about their specific syntax and use.
   #   config.vm.provision "shell", inline: <<-SHELL
   #   SHELL
- 
-  config.vm.provision "shell", path: "install-base-system.sh"
-  config.vm.provision "shell", path: "install-rvm.sh",  privileged: false, args: "stable"
-  config.vm.provision "shell", path: "install-rails.sh",  privileged: false
-  config.vm.provision "shell", path: "setup-db.sh",  privileged: false
- 
+
+  config.vm.provision "shell", path: "provisioning/install-base-system.sh"
+
+  config.vm.provision "shell", path: "provisioning/install-docker.sh"
+
+  config.vm.provision "shell", path: "provisioning/setup-db.sh",  privileged: false
+  config.vm.provision "shell", path: "provisioning/setup-docker.sh"
+
 end
