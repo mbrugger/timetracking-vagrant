@@ -1,4 +1,4 @@
-CREATE USER 'timetracking'@'localhost' IDENTIFIED BY 'timetracking';
-GRANT ALL PRIVILEGES ON * . * TO 'timetracking'@'localhost';
+CREATE USER 'timetracking'@'%' IDENTIFIED BY 'timetracking';
+GRANT ALL PRIVILEGES ON timetracking.* TO 'timetracking'@'%';
 FLUSH PRIVILEGES;
 create database timetracking;
