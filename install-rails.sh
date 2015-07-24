@@ -1,5 +1,5 @@
 #!/bin/bash --login
 
-rvm install 2.0.0
-rvm use ruby-2.0.0 --default
+rvm install 2.1.6
+rvm use ruby-2.1.6 --default
 gem install bundler
